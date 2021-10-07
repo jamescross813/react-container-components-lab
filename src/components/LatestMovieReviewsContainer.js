@@ -19,7 +19,7 @@ class LatestMovieReviewContainer extends Component{
         fetch(URL)
         .then(resp=>resp.json())
         .then(data=>{
-            this.setState({
+            return this.setState({
                 reviews: data.results
             })
          })
